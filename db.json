@@ -1,0 +1,2553 @@
+{
+  "forms": {
+    "Blaster": {
+      "type": [
+        "Aggro",
+        "Zoning"
+      ],
+      "alt": [
+        "Dragon",
+        "Dynamo",
+        "Gold",
+        "Star"
+      ],
+      "dices": [
+        {
+          "color": "purple",
+          "value": "d8"
+        },
+        {
+          "color": "green",
+          "value": "d8"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        }
+      ],
+      "passive": [
+        "Your Actions may apply to one extra target within range.",
+        "When you add Blaster Form to a Style, increase that Style's maximum range by 1."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "3+"
+          ],
+          "name": "Amplify",
+          "effect": [
+            "Your next Action this turn has its range increased by 2 and may apply to one additional target within range."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "3+",
+            "6+"
+          ],
+          "name": "Shockwave",
+          "effect": [
+            "Deal 1 damage to every enemy within range.",
+            "Deal 2 damage to one enemy within range."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Basically Magic",
+        "description": "You have an ability that's beyond normal, like lycanthrope, telekinesis, fire magic, or a collection of gadgets. When you take this skill, write down what kind of power you have."
+      }
+    },
+    "Control": {
+      "type": [
+        "Ruinous",
+        "Zoning"
+      ],
+      "alt": [
+        "Blizzard",
+        "Gravity",
+        "Owl",
+        "Watcher"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d10"
+        },
+        {
+          "color": "purple",
+          "value": "d8"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        },
+        {
+          "color": "green",
+          "value": "d4"
+        }
+      ],
+      "passive": [
+        "After you spend Control Tokens, you may push the enemy whose Action you Controlled one space.",
+        "When you add Control Form to a Style, choose one:",
+        "* Increase that Style's maximum range by 3.",
+        "* Set that Style's minimum range to 1.",
+        "Control Token: When an enemy within your range takes an action, you may spend a Control token to negate that Action, or spend two Control tokens to redirect it. You may only use Control tokens once per turn.",
+        "If you negate an Action, they lose the number they spent and the Action does not happen. If you redirect an Action, you choose all targets and make all decisions for that Action."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "3+",
+            "6+",
+            "9+"
+          ],
+          "name": "Suppression",
+          "effect": [
+            "You gain 1 Control token and may move one space.",
+            "You gain 1 Control token and may move one space.",
+            "You gain 1 Control token and may move one space."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Professional",
+        "description": "You always look stylish, cool, and in control. People listen when you make demands of them, and you have some lackeys or followers who will do what you say."
+      }
+    },
+    "Dance": {
+      "type": [
+        "Mobility",
+        "Desperation"
+      ],
+      "alt": [
+        "Butterfly",
+        "Circle",
+        "Hurricane",
+        "Shuffle"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d10"
+        },
+        {
+          "color": "purple",
+          "value": "d8"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        }
+      ],
+      "passive": [
+        "Each time you apply Forced Movement with an Action, you gain 1 Speed token",
+        "At the start of each enemy turn, you gain 3 Speed tokens."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "Speed",
+          "cost": [
+            "2",
+            "4"
+          ],
+          "name": "Dance Apart",
+          "effect": [
+            "Push an adjacent ally or enemy 1 space, then move 1 space.",
+            "Move one more space, then heal. Usable once per turn."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "Speed",
+          "cost": [
+            "3"
+          ],
+          "name": "Dance Together",
+          "effect": [
+            "Choose an ally or enemy within range. Pull them 1 space, then you move 1 space, then you pull them 1 more space. Usable twice per turn."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "Speed",
+          "cost": [
+            "3",
+            "7"
+          ],
+          "name": "Tango",
+          "effect": [
+            "Swap spaces with an adjacent enemy, then push them 1 space.",
+            "Pull that enemy 2 spaces, then deal 2 damage to them. Usable once per turn."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Put On A Show",
+        "description": "You can draw as much attention as you want, whenever you want it, away from anything else, for any reason."
+      }
+    },
+    "Iron": {
+      "type": [
+        "Guard",
+        "Preparation"
+      ],
+      "alt": [
+        "Blizzard",
+        "Gravity",
+        "Owl",
+        "Watcher"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d8"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        }
+      ],
+      "passive": [
+        "You have Armor. After your Armor triggers, you gain 1 Iron token.",
+        "When you gain Speed tokens, replace half of them (rounded up) with Iron tokens."
+      ],
+      "actions": [
+        {
+          "choose": "two",
+          "token": "",
+          "cost": [
+            "3+"
+          ],
+          "name": "Secure",
+          "effect": [
+            "Choose {}: you gain 2 Iron tokens; an ally within range other than yourself gains 2 Iron tokens; or heal someone within range."
+          ]
+        },
+        {
+          "choose": "two",
+          "token": "",
+          "cost": [
+            "3+"
+          ],
+          "name": "Contain",
+          "effect": [
+            "Choose {}: place a Trap into a space within range; or pull an enemy you can see 2 spaces; or Challenge an enemy you can see."
+          ]
+        },
+        {
+          "choose": "four",
+          "token": "",
+          "cost": [
+            "6+"
+          ],
+          "name": "Protect",
+          "effect": [
+            "Choose {} from the Secure and/or Contain lists."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Unmovable",
+        "description": "When you plant your feet and stand your ground, nothing can get past you or hurt you, not even vehicles or gunfire."
+      }
+    },
+    "One-Two": {
+      "type": [
+        "Aggro",
+        "Mobility"
+      ],
+      "alt": [
+        "Chaos",
+        "Drill",
+        "Hound",
+        "Sky"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        },
+        {
+          "color": "green",
+          "value": "d4"
+        }
+      ],
+      "passive": [
+        "After each damage-dealing Action you perform, you may deal 1 damage to each enemy targeted by that Action (whether or not the Action successfully dealt damage to them)."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "1+"
+          ],
+          "name": "Slide In",
+          "effect": [
+            "Teleport two spaces."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "4+"
+          ],
+          "name": "Whirlwind",
+          "effect": [
+            "Deal 1 damage to up to three enemies within range."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Think Fast",
+        "description": "You can come up with plans and act on them in an instant. You never lose in games of skill, and you can fast talk anyone into seeing things your way."
+      }
+    },
+    "Power": {
+      "type": [
+        "Aggro",
+        "Preparation"
+      ],
+      "alt": [
+        "Blade",
+        "Rage",
+        "Sun",
+        "Tiger"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d10"
+        },
+        {
+          "color": "purple",
+          "value": "d10"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        }
+      ],
+      "passive": [
+        "When you gain Speed tokens, replace half of them (rounded up) with Power tokens.",
+        "You may spend up to 3 Power tokens per hit."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "3+"
+          ],
+          "name": "Yell",
+          "effect": [
+            "You gain 3 Power tokens."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "6+",
+            "9+"
+          ],
+          "name": "Crush",
+          "effect": [
+            "Deal 3 damage to an enemy within range. Enemy tokens and enemy Abilities cannot be used in response to Crush.",
+            "You may spend any number of Power tokens on this hit."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Unstoppable",
+        "description": "You can smash through any door, wall, or vehicle."
+      }
+    },
+    "Reversal": {
+      "type": [
+        "Guard",
+        "Ruinous"
+      ],
+      "alt": [
+        "Panic",
+        "Scorpion",
+        "Owl",
+        "Watcher"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d8"
+        },
+        {
+          "color": "purple",
+          "value": "d8"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        }
+      ],
+      "passive": [
+        "You have Armor.",
+        "You do not discard your Speed tokens at the end of a turn.",
+        "You may only take one Action per turn.",
+        "Your Action Pool does not empty between Turns or Rounds."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "1+"
+          ],
+          "name": "Counter Attack",
+          "effect": [
+            "Teleport within range of an enemy that dealt damage to you this turn, then spend this number on another Action. That Action must target the enemy you teleported to."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "X"
+          ],
+          "name": "Seize The Opening",
+          "effect": [
+            "Teleport 2 spaces, then if the active character is within range, spend X on an Action that is able to target the active character. That Action must target the active character"
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Perfect Timing",
+        "description": "You are always in the right place at the right time. You can perfectly catch or stop anything coming directly at you with a single, well-placed motion."
+      }
+    },
+    "Shadow": {
+      "type": [
+        "Mobility",
+        "Zoning"
+      ],
+      "alt": [
+        "Moon",
+        "Silence",
+        "Silver",
+        "Snake"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d4"
+        },
+        {
+          "color": "green",
+          "value": "d4"
+        },
+        {
+          "color": "green",
+          "value": "d4"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        }
+      ],
+      "passive": [
+        "At the start and end of your turn, you gain 2 Speed tokens",
+        "At the start of each Movement Phase, you may move one space.",
+        "You do not discard your Speed tokens during the End Phase."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "Speed",
+          "cost": [
+            "3"
+          ],
+          "name": "Stunt",
+          "effect": [
+            "Place one Fog, Copy, Pit, or Trap obstacle into an adjacent space, then teleport two spaces."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Shadow Walker",
+        "description": "If you don't want to draw attention to yourself, no one will ever notice you sneaking around, even in plain sight."
+      }
+    },
+    "Song": {
+      "type": [
+        "Support",
+        "Preparation"
+      ],
+      "alt": [
+        "Melody",
+        "Symphony",
+        "Remix",
+        "Wave"
+      ],
+      "dices": [
+        {
+          "color": "purple",
+          "value": "d8"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d4"
+        }
+      ],
+      "passive": [
+        "At the start of your turn, choose your song: Iron, Power, or Speed. You gain 3 tokens of the chosen type, and each ally (other than yourself) gains 1 token of the chosen type."
+      ],
+      "actions": [
+        {
+          "choose": "one",
+          "token": "Speed",
+          "cost": [
+            "1+",
+            "4+",
+            "6+"
+          ],
+          "name": "Suppression",
+          "effect": [
+            "Choose an ally you can see. Choose {}: They remove one token they hold; they heal; or they gain 2 tokens from your song.",
+            "They also choose {} from the list",
+            "Add a 4 to their Action Pool. (Once per turn)"
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Natural Charisma",
+        "description": "People naturally like you. Anyone who is not your enemy is your friend, even if you've just met them."
+      }
+    },
+    "Thorns": {
+      "type": [
+        "Guard",
+        "Aggro"
+      ],
+      "alt": [
+        "Danger",
+        "Mantis",
+        "Spiral",
+        "World"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "7"
+        },
+        {
+          "color": "purple",
+          "value": "5"
+        },
+        {
+          "color": "purple",
+          "value": "3"
+        },
+        {
+          "color": "green",
+          "value": "1"
+        }
+      ],
+      "passive": [
+        "Your Action Pool is predetermined: 7, 5, 3, 1.",
+        "When you gain a Shield while you already hold a Shield, combine them, adding their Values together.",
+        "After an enemy damages your Shield with an Action, you deal 1 damage to them. If that damage broke your Shield, you deal 2 damage to them instead.",
+        "At the end of your turn, you gain a 1-point Shield."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "3+",
+            "7+"
+          ],
+          "name": "Focus",
+          "effect": [
+            "You gain a 2 point Shield. You may move one space.",
+            "You gain a 4-point Shield. You may move two spaces."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Peaceful Heart",
+        "description": "You can redirect others' anger to more productive ends. Your soothing voice and gentle touch can calm rampaging beasts, unruly mobs, and anyone else acting out of hurt or anger."
+      }
+    },
+    "Vigilance": {
+      "type": [
+        "Guard",
+        "Ruinous"
+      ],
+      "alt": [
+        "Bear",
+        "Eternity",
+        "Heart",
+        "Moment"
+      ],
+      "dices": [
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        },
+        {
+          "color": "purple",
+          "value": "d6"
+        }
+      ],
+      "passive": [
+        "At the start of your turn, either heal or discard one token you hold.",
+        "At the end of your turn, choose an enemy in range and give them one Weakness token."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "2+",
+            "5+"
+          ],
+          "name": "Bow Down",
+          "effect": [
+            "Give one Weakness token to an enemy within range.",
+            "Give two Weakness tokens to an enemy within range."
+          ]
+        },
+        {
+          "choose": "",
+          "token": "",
+          "cost": [
+            "3+",
+            "6+"
+          ],
+          "name": "Stand Strong",
+          "effect": [
+            "Heal an ally within range.",
+            "Heal a different ally within range."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Eyes Wide Open",
+        "description": "Your senses are unusually strong. You cannot be surprised by anything, and always have a chance to react first."
+      }
+    },
+    "Wild": {
+      "type": [
+        "Desperation",
+        "Aggro"
+      ],
+      "alt": [
+        "Beast",
+        "Platinum",
+        "Soul",
+        "Storm"
+      ],
+      "dices": [
+        {
+          "color": "purple",
+          "value": "d10"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        },
+        {
+          "color": "green",
+          "value": "d6"
+        }
+      ],
+      "passive": [
+        "For each of these conditions that is true, add d6 to your Action Dice, to a maximum of 3d6 extra dice",
+        "* Your current health bar is at half HP or less; - or - if you started this fight with multiple health bars, you are missing one or more health bars.",
+        "* Someone on your team is at zero HP; - or - someone on your team is removed from play.",
+        "* You are at 1 HP or less.",
+        "* You are holding a Common token.",
+        "* You are holding a Rare token.",
+        "At the start of your turn, for each bonus die you failed to acquire, you gain 1 of Basic Token of your choice (Iron, Power, or Speed) (maximum 3 Basic tokens)."
+      ],
+      "actions": [
+        {
+          "choose": "",
+          "token": "Basic",
+          "cost": [
+            "3"
+          ],
+          "name": "Fury",
+          "effect": [
+            "Deal 1 damage to an enemy within range.",
+            "At the end of this turn, push that enemy 1 space.",
+            "Fury can be used only 3 times per turn."
+          ]
+        }
+      ],
+      "skill": {
+        "name": "Wind Runner",
+        "description": "You can leap to anywhere you can see, run along walls, run asfast as a car, and, if you have an explanation, fly."
+      }
+    }
+  },
+  "archetypes": {
+    "Angel": {
+      "Alpha": {
+        "name": "Heaven’s Piledriver",
+        "description": "Deal 6 damage to an adjacent enemy. That enemy cannot use Free Movement until after the end of their next turn."
+      },
+      "Delta": {
+        "name": "Siren’s Scream",
+        "description": "Challenge and deal 2 damage to all enemies. Then, you gain a 10-point Shield."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, heal 1, then Challenge an enemy you can see and deal 1 damage to them.",
+          "After you Challenge an enemy, deal 1 damage to them and heal 1."
+        ],
+        "fused": [
+          "At the start of your turn, heal 1, then Challenge an enemy you can see. After you Challenge an enemy, you deal 1 damage to them"
+        ],
+        "frantic": [
+          "At the start of this turn, heal, then Challenge an enemy you can see and deal 2 damage to them."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Halcyon",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "At the start of your turn, remove one token you hold.",
+            "After you remove tokens using an Action or Ability, you gain an equal number of Iron tokens."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Purify",
+              "cost": [
+                "1+",
+                "3+",
+                "6+"
+              ],
+              "effect": [
+                "Remove one token from an ally within range.",
+                "Remove up to two tokens from someone within range.",
+                "Remove up to two tokens from someone within range."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Judgment",
+          "type": "Ruinous",
+          "range": "1",
+          "passive": [
+            "When an enemy with your Challenge token starts their turn, they do not roll their lowest Action Die. It is discarded and unused. If they are in a Stance that does not roll Action Dice, they get rid of their smallest number instead."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Denial",
+              "cost": [
+                "3+"
+              ],
+              "effect": [
+                "Teleport into an empty space adjacent to an enemy you can see, then Challenge them."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shining",
+          "type": "Support",
+          "range": "1",
+          "passive": [
+            "At the start of your turn, all obstacles and enemies adjacent to you are pushed one space.",
+            "Enemies cannot move into the spaces adjacent to you."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Beacon",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Pull one ally up to three spaces. You and that ally heal 1.",
+                "That ally heals."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Singing",
+          "type": "Technical",
+          "range": "2-4",
+          "passive": [
+            "At the start of your turn, choose a Mood: Despair, Sorrow, or Rage.",
+            "If you picked Despair, give 1 Fatigue token to all enemies.",
+            "If you picked Sorrow, give 1 Weakness token to all enemies.",
+            "If you picked Rage, give 1 Burning token to all enemies."
+          ],
+          "actions": [
+            {
+              "choose": "Two",
+              "token": "",
+              "name": "Symphony",
+              "cost": "",
+              "effect": [
+                "Pull an ally 3 spaces; an ally within range heals; Challenge an enemy within range; an enemy within range is pushed 3 spaces; or destroy an obstacle within range."
+              ]
+            },
+            {
+              "choose": "",
+              "token": "",
+              "name": "Rip Chord",
+              "cost": [
+                "2+",
+                "5+",
+                "8+"
+              ],
+              "effect": [
+                "Give one of your Mood’s tokens to an enemy within Range.",
+                "Give one of your Mood’s tokens to each enemy within Range.",
+                "Give one of your Mood’s tokens to each enemy you can see."
+              ]
+            },
+            {
+              "choose": "",
+              "token": "",
+              "name": "Mood Shift",
+              "cost": [
+                "6+"
+              ],
+              "effect": [
+                "Apply all of your Stance’s Start of Turn effects as this Action’s effects. Usable once per turn. Only usable when you are the active character."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Winged",
+          "type": "Mobility",
+          "range": "1-2",
+          "passive": [
+            "You do not take Fall Damage.",
+            "Rubble does not give you Fatigue tokens.",
+            "At the end of every turn, you may move two spaces."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "As The Crow Flies",
+              "cost": [
+                "1+"
+              ],
+              "effect": [
+                "Teleport four spaces."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Cavalry": {
+      "Alpha": {
+        "name": "Call In The Cavalry",
+        "description": "Your crew shows up to fight everybody for you! Deal 2 damage to all enemies, then deal 2 damage to all enemies."
+      },
+      "Delta": {
+        "name": "Inspire Perfection",
+        "description": "Remove up to 4 Common tokens from yourself and each ally you can see. Give two Power tokens and two Iron tokens to yourself and each ally you can see. You and each ally you can see heals."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start and end of your turn, you may move up to 2 spaces, then you and each ally within range gains a 2-point Shield. If they were already holding a Shield, increase its value by 1 instead."
+        ],
+        "fused": [
+          "At the end of your turn, you may move up to 2 spaces, then you and each ally within range gains a 2-point Shield. If they were already holding a Shield, increase its value by 1 instead."
+        ],
+        "frantic": [
+          "At the start and end of this turn, you may move up to 2 spaces, then you and each ally within range gains a 2-point Shield. If they were already holding a Shield, increase its value by 1 instead."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Charging",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "At the start of your turn, you may move up to 2 spaces.",
+            "At the start of each ally's turn, they may move up to 2 spaces."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Purify",
+              "cost": [
+                "3+"
+              ],
+              "effect": [
+                "You may move one space, then deal 1 damage to an enemy within range. An ally you can see may move one space, then deal 1 damage to an enemy within their range."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heroic",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "Whenever an ally within range takes damage, they take half that damage (rounded down) and you take the other half (rounded up)."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Burning Heart",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "You and each ally within range gains 2 Iron tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jumping",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "At the start and end of your turn, you may teleport one, two, or three spaces."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Leap In",
+              "cost": [
+                "3+"
+              ],
+              "effect": [
+                "Teleport three spaces. Then, you may deal 2 damage to an enemy within range."
+              ]
+            },
+            {
+              "choose": "",
+              "token": "",
+              "name": "Leap Out",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Deal 2 damage to an enemy within range, then teleport three spaces. Then, you may deal 2 damage to a different enemy within range."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rallying",
+          "type": "Support",
+          "range": "1-3",
+          "passive": [
+            "At the end of your turn, you and each ally within range heals.",
+            "At the start of each ally's turn, if they are within range of you, they may heal."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Rallying",
+              "cost": [
+                "2+",
+                "3+",
+                "5+"
+              ],
+              "effect": [
+                "Pull one ally you can see up to 3 spaces.",
+                "Pull one ally you can see up to 4 spaces.",
+                "Each pulled ally heals."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Unbreakable",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After each Action you perform, an ally within range gains 1 Iron token. Your allies within range may spend your tokens."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Eyes Open",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "You gain 6 Iron tokens and 1 Weakness token."
+              ]
+            },
+            {
+              "choose": "",
+              "token": "",
+              "name": "You Stay Out Of This",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Give 6 Weakness tokens and 3 Iron tokens to an enemy within range."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Cyborg": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Demon": {
+      "Alpha": {
+        "name": "Unending Despair",
+        "description": "Target an adjacent enemy. Give them 4 Burning tokens, 3 Fatigue tokens, and 2 Weakness tokens. You gain 2 Iron tokens, 2 Power tokens, 2 Speed tokens, and 2 Chaos tokens."
+      },
+      "Delta": {
+        "name": "Dancing Mad",
+        "description": "Teleport three spaces, then deal 2 damage to an adjacent enemy. You may repeat this as many times as you like. After you damage the same enemy twice, you deal 1 damage to all enemies within Range 1-3, then this Super Move ends."
+      },
+      "heroes": {
+        "foncused": [
+          "At the end of your turn, you gain 2 Chaos tokens."
+        ],
+        "fused": [
+          "At the end of your turn, you gain 1 Chaos token."
+        ],
+        "frantic": [
+          "At the end of this turn, you gain 2 Chaos tokens."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Dark",
+          "type": "Zoning",
+          "range": "2-4",
+          "passive": [
+            "You can see and target enemies through Fog.",
+            "At the end of your turn, place a Fog obstacle into your space."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Darkness Dawns",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Place two Fog obstacles into empty spaces within range. You may teleport to one of those Fog obstacles."
+              ]
+            },
+            {
+              "choose": "",
+              "token": "",
+              "name": "Twilight Sorrow",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Each enemy standing in Fog gains one Weakness token. You gain one Speed token for each enemy affected."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ogre's",
+          "type": "Zoning",
+          "range": "1-2",
+          "passive": [
+            "Your Throws may target any number of enemies within range.",
+            "After you Throw or Grapple an enemy, deal 1 damage to them."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Watch Your Step",
+              "cost": [
+                "2+"
+              ],
+              "effect": [
+                "Choose an enemy you can see that moved during this turn. You deal 2 damage to them."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Slasher",
+          "type": "Aggro",
+          "range": "1",
+          "passive": [
+            "At the end of every turn, you deal 1 damage to an adjacent enemy."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Suddenly…",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Teleport into an empty space adjacent to someone who is alone, then if they are an enemy, deal 1 damage to them.",
+                "Someone is alone if nobody is adjacent to them."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vampire",
+          "type": "Desperation",
+          "range": "1",
+          "passive": [
+            "After you deal damage with a hit, you heal 1.",
+            "After you give Weakness tokens to an enemy, you gain that many Power tokens."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Life Steal",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Deal 2 damage to an enemy within range. You may give that enemy one Weakness token."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zombie",
+          "type": "Guard",
+          "range": "1",
+          "passive": [
+            "After you spend Iron tokens, you may deal 1 damage to an enemy within range of you or your Copies.",
+            "Your Copies have 2 HP each.",
+            "You may spend Iron tokens to reduce hits targeting your Copies."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Hunger",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "One target within range discards 3 tokens of their choice (or all of their tokens, if they have less). You gain Iron tokens equal to the number of tokens they discarded."
+              ]
+            },
+            {
+              "choose": "",
+              "token": "",
+              "name": "Raise The Dead",
+              "cost": [
+                "4+"
+              ],
+              "effect": [
+                "Target one enemy within Range 1-4. Create two Copies in empty spaces adjacent to that enemy, then deal 1 damage to that enemy."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Flametongue": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Gunkata": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Phantom": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Punk": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Teacher": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Trickster": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Underdog": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "War Dancer": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Winterblossom": {
+      "Alpha": {
+        "name": "Draining Knuckle",
+        "description": "Deal 3 damage to an adjacent enemy, and they discard all Basic Tokens they hold. Then, you gain 2 Power tokens, 2 Iron tokens, and 3 Speed tokens."
+      },
+      "Delta": {
+        "name": "Drive Install",
+        "description": "You gain 6 Power tokens, 6 Iron tokens, and 8 Speed tokens. For the rest of this fight, you can spend 1 more Power token and 1 more Iron token per hit. For the rest of this fight, you only discard 1 Speed token at the end of each turn, instead of all of them."
+      },
+      "heroes": {
+        "foncused": [
+          "At the start of your turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ],
+        "fused": [
+          "At the start of your turn, you gain two Basic Tokens of one type, and one Basic token of a different type."
+        ],
+        "frantic": [
+          "At the start of this turn, you gain 3 Basic Tokens of one type, 2 Basic tokens of a different type, and one Basic token of the final type."
+        ]
+      },
+      "styles": [
+        {
+          "name": "Armored",
+          "type": "Guard",
+          "range": "1-2",
+          "passive": [
+            "After you spend Iron tokens, you heal 1."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Iron",
+              "name": "You, Stay",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Challenge an enemy within range.",
+                "Give that enemy 2 Fatigue tokens."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "type": "Aggro",
+          "range": "1-3",
+          "passive": [
+            "After you use a Power token to enhance a hit, give one Burning token to the target of that hit."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "Power",
+              "name": "Flamethrower",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Choose an enemy within range. They take 1 damage, gain one Burning token, and are pushed 1 space. Usable twice per turn."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine",
+          "type": "Technical",
+          "range": "1-2",
+          "passive": [
+            "Once per turn, you may spend your Basic Tokens as if they were any other Basic Tokens. The Basic Tokens are Iron, Power, and Speed tokens."
+          ],
+          "actions": [
+            {
+              "choose": "three",
+              "token": "",
+              "name": "High Efficiency",
+              "cost": [
+                "1+",
+                "4+"
+              ],
+              "effect": [
+                "Choose {}: You heal 1; you gain one Iron token; you gain one Power token; you gain one Speed token; or you deal 1 damage to an enemy within range.",
+                "Choose the last two options."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rocket",
+          "type": "Mobility",
+          "range": "1",
+          "passive": [
+            "After you push someone, you may teleport to any empty space adjacent to them."
+          ],
+          "actions": [
+            {
+              "choose": "speed",
+              "token": "",
+              "name": "Rocket Tackle",
+              "cost": [
+                "2"
+              ],
+              "effect": [
+                "Push an adjacent enemy or ally two spaces."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Syphon",
+          "type": "Ruinous",
+          "range": "1-2",
+          "passive": [
+            "At the end of your turn, choose a token you hold. Either replace it with a Power token, or gain another copy of it."
+          ],
+          "actions": [
+            {
+              "choose": "",
+              "token": "",
+              "name": "Power Converter",
+              "cost": [
+                "2+",
+                "6+"
+              ],
+              "effect": [
+                "Target a single token held by you or someone within range. Choose one or both: You steal the targeted token(s) from them; and/or replace the targeted token(s) with Power tokens.",
+                "The Choice Effect applies to every token they hold of the targeted token's type."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
