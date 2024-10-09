@@ -1,5 +1,9 @@
 import React from 'react';
-import { getArchetypes, getForms } from './api/api.ts';
+import {
+  // getArchetypes,
+  getDojoDB,
+  //  getForms 
+} from './api/api.ts';
 import {
   Box,
   CssBaseline,
@@ -29,40 +33,49 @@ function App() {
     },
   })
 
-  const getFormsData = async () => {
+  // const getFormsData = async () => {
+  //   try {
+  //     const allForms = await getForms();
+  //     setAllForms(allForms);
+  //     console.log(allForms);
+  //   } catch {
+  //     console.log('Error in fetching forms');
+  //   }
+  // };
+  // const getArchetypesData = async () => {
+  //   try {
+  //     const allArchetypes = await getArchetypes();
+  //     setAllArchetypes(allArchetypes);
+  //     console.log(allArchetypes);
+  //   } catch {
+  //     console.log('Error in fetching Archetypes');
+  //   }
+  // };
+
+  const getDojoDBData = async () => {
     try {
-      const allForms = await getForms();
-      setAllForms(allForms);
-      console.log(allForms);
+      const dojoDBData = await getDojoDB();
+      setAllForms(dojoDBData.forms);
+      setAllArchetypes(dojoDBData.archetypes);
+
     } catch {
-      console.log('Error in fetching forms');
+      console.log('Error in fetching dojoDB');
     }
-  };
-  const getArchetypesData = async () => {
-    try {
-      const allArchetypes = await getArchetypes();
-      setAllArchetypes(allArchetypes);
-      console.log(allArchetypes);
-    } catch {
-      console.log('Error in fetching Archetypes');
-    }
-  };
+  }
 
 
   React.useEffect(() => {
-    getFormsData();
-    getArchetypesData();
+    getDojoDBData();
+    // getFormsData();
+    // getArchetypesData();
   }, []);
 
   return (
-
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <HeaderComponent darkMode={darkMode} setDarkMode={setDarkMode} allForms={allForms} selectedForm={selectedForm} setSelectedForm={setSelectedForm}
         allArchetypes={allArchetypes} selectedArchetypes={selectedArchetypes} setSelectedArchetypes={setSelectedArchetypes} />
-
       <Box>
-
         <Box>
           <FormComponent selectedForm={selectedForm} allForms={allForms} />
           <ArchetypeComponent allArchetypes={allArchetypes} selectedArchetypes={selectedArchetypes}

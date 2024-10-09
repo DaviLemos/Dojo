@@ -1,6 +1,20 @@
 import { Box, Divider, Stack, Typography } from "@mui/material";
 
-export const ArchetypeComponent = ({ allArchetypes, selectedArchetypes }) => {
+// type ArchetypesTypes = {
+//   [key: string]: {
+//     styles: {
+//       name: string;
+//       range: string;
+//     }[];
+//   };
+// }
+
+type ArchetypeComponentType = {
+  allArchetypes: any;
+  selectedArchetypes: string[];
+}
+
+export const ArchetypeComponent = ({ allArchetypes, selectedArchetypes }: ArchetypeComponentType) => {
   console.log(allArchetypes)
   return (
     <Box>
@@ -47,7 +61,7 @@ export const ArchetypeComponent = ({ allArchetypes, selectedArchetypes }) => {
                   >
                     <Stack direction={'row'}>
 
-                      {allArchetypes[archetype].styles.map((style: string, index: number) => {
+                      {/* {allArchetypes[archetype].styles.map((style: string, index: number) => {
                         return (
                           <Box
                             key={style + index}
@@ -69,7 +83,7 @@ export const ArchetypeComponent = ({ allArchetypes, selectedArchetypes }) => {
 
                           </Box>
                         );
-                      })}
+                      })} */}
                     </Stack>
                   </Box>
                 </Box>

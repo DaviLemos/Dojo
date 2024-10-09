@@ -1,7 +1,8 @@
-import { Box, Button, Chip, Divider, FormControl, InputLabel, MenuItem, OutlinedInput, Select, SelectChangeEvent, Stack, Theme } from "@mui/material"
+import { Box, Button, Chip, Divider, FormControl, InputLabel, MenuItem, OutlinedInput, Select, SelectChangeEvent, Stack } from "@mui/material"
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import { useTheme } from "@emotion/react";
+import { FormsType } from "../../type";
+// import { useTheme } from "@emotion/react";
 
 
 const ITEM_HEIGHT = 48;
@@ -16,16 +17,27 @@ const MenuProps = {
 };
 
 
+type HeaderComponentType = {
+  darkMode: boolean;
+  setDarkMode: (value: boolean) => void;
+  allForms: FormsType;
+  selectedForm: string[];
+  setSelectedForm: (value: string[]) => void;
+  allArchetypes: any;
+  selectedArchetypes: string[];
+  setSelectedArchetypes: (value: string[]) => void;
+}
+
 export const HeaderComponent = ({ darkMode, setDarkMode, allForms, selectedForm, setSelectedForm, allArchetypes, setSelectedArchetypes, selectedArchetypes
-}) => {
-  const theme = useTheme();
-  function getStyles(name: string, personName: readonly string[], theme: Theme) {
-    return {
-      fontWeight: personName.includes(name)
-        ? theme.typography.fontWeightMedium
-        : theme.typography.fontWeightRegular,
-    };
-  }
+}: HeaderComponentType) => {
+  // const theme = useTheme();
+  // function getStyles(name: string, personName: readonly string[], theme: Theme) {
+  //   return {
+  //     fontWeight: personName.includes(name)
+  //       ? theme.typography.fontWeightMedium
+  //       : theme.typography.fontWeightRegular,
+  //   };
+  // }
 
 
   const handleChangeForm = (event: SelectChangeEvent<typeof selectedForm>) => {
@@ -73,7 +85,7 @@ export const HeaderComponent = ({ darkMode, setDarkMode, allForms, selectedForm,
               <MenuItem
                 key={form}
                 value={form}
-                style={getStyles(form, selectedForm, theme)}
+              // style={getStyles(form, selectedForm, theme)}
               >
                 {form}
               </MenuItem>
@@ -82,7 +94,7 @@ export const HeaderComponent = ({ darkMode, setDarkMode, allForms, selectedForm,
         </FormControl>
         <Divider orientation="vertical" flexItem />
         <Button onClick={() => setDarkMode(!darkMode)}>{darkMode ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />}</Button>
-        {/* <Divider orientation="vertical" flexItem />
+        <Divider orientation="vertical" flexItem />
         <FormControl fullWidth sx={{ m: 1, width: 300 }}>
           <InputLabel id="demo-multiple-checkbox-label">Forms</InputLabel>
           <Select
@@ -106,13 +118,13 @@ export const HeaderComponent = ({ darkMode, setDarkMode, allForms, selectedForm,
               <MenuItem
                 key={form}
                 value={form}
-                style={getStyles(form, selectedArchetypes, theme)}
+              // style={getStyles(form, selectedArchetypes, theme)}
               >
                 {form}
               </MenuItem>
             ))}
           </Select>
-        </FormControl> */}
+        </FormControl>
       </Stack>
     </Box>)
 }
